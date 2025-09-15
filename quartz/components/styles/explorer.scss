@@ -20,7 +20,7 @@
       margin: 0;
     }
 
-    .hide-until-loaded ~ .explorer-content {
+    .hide-until-loaded ~ #explorer-content {
       display: none;
     }
   }
@@ -108,7 +108,7 @@ button.desktop-explorer {
   }
 }
 
-.explorer-content {
+#explorer-content {
   list-style: none;
   overflow: hidden;
   overflow-y: auto;
@@ -215,7 +215,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     &.collapsed {
       flex: 0 0 34px;
 
-      & > .explorer-content {
+      & > #explorer-content {
         transform: translateX(-100vw);
         visibility: hidden;
       }
@@ -224,13 +224,13 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     &:not(.collapsed) {
       flex: 0 0 34px;
 
-      & > .explorer-content {
+      & > #explorer-content {
         transform: translateX(0);
         visibility: visible;
       }
     }
 
-    .explorer-content {
+    #explorer-content {
       box-sizing: border-box;
       z-index: 100;
       position: absolute;
